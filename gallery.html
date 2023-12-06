@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gallery - Spa and Salon</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #0099cc;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .image-container img {
+            max-width: calc(33.333% - 20px);
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-end;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #0099cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0077b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Photo Gallery</h1>
+        <p>Explore our beautiful spa and salon through these images</p>
+    </header>
+
+    <section id="interior-images">
+        <h2>Interior</h2>
+        <div class="image-container">
+            <img src="interior-spa.jpg" alt="Spa Interior with Relaxation Area">
+            <img src="interior-reception.jpg" alt="Reception Area">
+            <img src="interior-salon.jpg" alt="Salon Interior with Styling Stations">
+            <img src="interior-massage-room.jpg" alt="Massage Room">
+        </div>
+    </section>
+
+    <section id="services-images">
+        <h2>Services</h2>
+        <div class="image-container">
+            <img src="massage-service.jpg" alt="Massage Therapy Session">
+            <img src="facial-service.jpg" alt="Luxurious Facial Treatment">
+            <img src="hair-coloring.jpg" alt="Hair Coloring Service">
+            <img src="manicure-service.jpg" alt="Manicure and Nail Art">
+        </div>
+    </section>
+
+    <section id="customer-images">
+        <h2>Satisfied Customers</h2>
+        <div class="image-container">
+            <img src="customer-happy1.jpg" alt="Happy Customer after Facial">
+            <img src="customer-happy2.jpg" alt="Satisfied Massage Therapy Client">
+            <img src="customer-happy3.jpg" alt="Happy Customer with Stylish Haircut">
+            <img src="customer-happy4.jpg" alt="Delighted Manicure Recipient">
+        </div>
+    </section>
+
+    <section id="before-after">
+        <h2>Before and After</h2>
+        <div class="image-container">
+            <img src="before-after-hair1.jpg" alt="Before and After Hair Styling">
+            <img src="before-after-facial1.jpg" alt="Before and After Facial Treatment">
+            <img src="before-after-makeup1.jpg" alt="Before and After Makeup Transformation">
+            <img src="before-after-nail1.jpg" alt="Before and After Nail Art">
+        </div>
+    </section>
+
+    <footer>
+        <button onclick="navigateTo('index.html')">Home</button>
+        <button onclick="navigateTo('about.html')">About</button>
+        <button onclick="navigateTo('blog.html')">Blog</button>
+        <button onclick="navigateTo('booking.html')">Book Now</button>
+        <button onclick="navigateTo('contact.html')">Contact Us</button>
+        <button onclick="navigateTo('faqs.html')">FAQs</button>
+        <button onclick="navigateTo('gallery.html')">Gallery</button>
+        <button onclick="navigateTo('services.html')">Services</button>
+        <button onclick="navigateTo('specials.html')">Offers</button>
+        <button onclick="navigateTo('testimonials.html')">Testimonials</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

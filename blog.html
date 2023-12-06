@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog/News - Spa and Salon</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Updated text color */
+        }
+
+        h1, h2, p {
+            margin: 0;
+        }
+
+        header, section, footer {
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #f9f9f9; /* Lighter background color */
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px; /* Slightly larger font size */
+            font-weight: bold;
+            color: #800080; /* Darker purple color */
+            cursor: pointer;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 30px; /* Increased margin-bottom */
+            background-color: #fff; /* White background color */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px; /* Increased padding */
+        }
+
+        section h2 {
+            font-size: 28px; /* Slightly larger font size */
+            font-weight: bold;
+            color: #00cccc; /* Darker cyan color */
+            cursor: pointer;
+        }
+
+        section p {
+            margin-top: 15px; /* Increased margin-top */
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        button {
+            background-color: #800080;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: #00cccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 onclick="navigateTo('blog.html')">Blog/News</h1>
+        <p>Stay updated with the latest beauty tips, trends, and announcements.</p>
+    </header>
+
+    <section id="beauty-tips">
+        <h2>Beauty Tips</h2>
+        <p>Explore our blog for an array of valuable insights into beauty tips and wellness advice.</p>
+        <!-- Add regularly updated content here -->
+    </section>
+
+    <section id="testimonials">
+        <h2 onclick="navigateTo('testimonials.html')">Customer Testimonials</h2>
+        <p>Discover firsthand the thoughts of our delighted customers as they share their unique and gratifying experiences with us. Dive into the testimonials that speak volumes about the satisfaction and contentment our customers find in the services we provide.</p>
+        <!-- Add customer testimonials and success stories here -->
+    </section>
+
+    <section id="announcements">
+        <h2>Announcements</h2>
+        <p>Stay tuned for exciting announcements about new services and promotions. Keep an eye out for the latest updates on upcoming offerings and special promotions that will add even more delight to your experience with us.</p>
+        <!-- Add announcements for new services or promotions here -->
+    </section>
+
+    <footer>
+        <button onclick="navigateTo('index.html')">Home</button>
+        <button onclick="navigateTo('About.html')">About</button>
+        <button onclick="navigateTo('blog.html')">Blog</button>
+        <button onclick="navigateTo('booking.html')">Book Now</button>
+        <button onclick="navigateTo('contact.html')">Contact Us</button>
+        <button onclick="navigateTo('faqs.html')">Faqs</button>
+        <button onclick="navigateTo('gallery.html')">Gallery</button>
+        <button onclick="navigateTo('services.html')">Services</button>
+        <button onclick="navigateTo('specials.html')">Offers</button>
+        <button onclick="navigateTo('testimonials.html')">Testimonials</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

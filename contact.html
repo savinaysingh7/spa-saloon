@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - Spa and Salon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1f1f1f;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        section {
+            padding: 30px;
+            background-color: #404040;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #666666;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555555;
+        }
+
+        #social-media ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #social-media ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #333333;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer button {
+            margin-right: 10px;
+            background-color: #ffffff;
+            color: #333333;
+            border: none;
+            cursor: pointer;
+        }
+       /* section{
+            background-color:rgba(0,0,0,0.2);
+            color:black;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for inquiries or appointments</p>
+    </header>
+
+    <section id="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            <p>Address: 123 Spa Street, Cityville</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: <a href="mailto:info@spasalon.com">info@spasalon.com</a></p>
+        </address>
+    </section>
+
+    <section id="contact-form">
+        <h2>Contact Form</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p>We'll get back to you as soon as possible. Please allow 1-2 business days for a response.</p>
+    </section>
+
+    <section id="social-media">
+        <h2>Connect with Us on Social Media</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/spasalon" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://twitter.com/s.a.v.i.n.a.y" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.instagram.com/savinaysingh7" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+    </section>
+
+    <section id="business-hours">
+        <h2>Business Hours</h2>
+        <p>We are open:</p>
+        <ul>
+            <li>Monday to Friday: 9:00 AM - 7:00 PM</li>
+            <li>Saturday: 10:00 AM - 5:00 PM</li>
+            <li>Sunday: Closed</li>
+        </ul>
+    </section>
+
+    <section id="location-map">
+        <h2>Visit Us</h2>
+        <p>Find us on the map below:</p>
+        <!--  map -->
+    </section>
+
+    <footer>
+        <button onclick="navigateTo('index.html')">Home</button>
+        <button onclick="navigateTo('about.html')">About</button>
+        <button onclick="navigateTo('blog.html')">Blog</button>
+        <button onclick="navigateTo('booking.html')">Book Now</button>
+        <button onclick="navigateTo('contact.html')">Contact Us</button>
+        <button onclick="navigateTo('faqs.html')">Faqs</button>
+        <button onclick="navigateTo('gallery.html')">Gallery</button>
+        <button onclick="navigateTo('services.html')">Services</button>
+        <button onclick="navigateTo('specials.html')">Offers</button>
+        <button onclick="navigateTo('testimonials.html')">Testimonials</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

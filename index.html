@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to Our Spa and Salon</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e6e6;
+            color: #333333;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #7f8c8d; 
+        }
+
+        button {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #d35400;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            color: #ffffff;
+        }
+
+        button:hover {
+            background-color: #e67e22; 
+        }
+
+        
+        header {
+            padding: 20px;
+            background-color: #3498db; 
+            text-align: center;
+            color: #ffffff;
+        }
+
+        
+        .section {
+            padding: 40px;
+            background-color: #ecf0f1; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50; 
+        }
+
+        .service, .promotion {
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; 
+        }
+
+        .service h3, .promotion h3 {
+            margin-bottom: 10px;
+            color: #2c3e50; 
+        }
+
+        .service:hover, .promotion:hover {
+            transform: scale(1.05); 
+        }
+
+        
+        footer {
+            padding: 20px;
+            background-color: #3498db;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Spa and Salon</h1>
+            <p>Experience the ultimate in relaxation and beauty</p>
+        </header>
+
+        <section id="services" class="section">
+            <h2>Featured Services</h2>
+            <div class="service">
+                <h3>Massage Therapy</h3>
+                <p>Indulge in our rejuvenating massage therapy sessions, designed to melt away stress and promote overall well-being. Our skilled therapists use a variety of techniques to cater to your specific needs.</p>
+                <p>Price: $60 per session</p>
+            </div>
+
+            <div class="service">
+                <h3>Luxurious Facials</h3>
+                <p>Revitalize your skin with our luxurious facial treatments, tailored to nourish and enhance your natural beauty. Our estheticians use premium products for a spa-like experience.</p>
+                <p>Price: $70 per session</p>
+            </div>
+
+            <div class="service">
+                <h3>Hair Styling & Color</h3>
+                <p>Transform your look with our professional hair styling and coloring services. From trendy cuts to vibrant colors, our stylists are here to make your hair dreams a reality.</p>
+                <p>Price: Varies based on service</p>
+            </div>
+
+            <button class="view-more" onclick="navigateTo('services.html')">View All Services</button>
+        </section>
+
+        <section id="promotions" class="section">
+            <h2>Special Promotions</h2>
+            <div class="promotion">
+                <h3>Spa Day Package</h3>
+                <p>Enjoy a full day of pampering with our exclusive spa day package. This package includes a massage, facial, hair treatment, and complimentary access to our spa amenities. Perfect for a day of relaxation and self-care.</p>
+                <p>Price: $150</p>
+            </div>
+
+            <div class="promotion">
+                <h3>New Client Discount</h3>
+                <p>As a warm welcome, new clients receive a special 15% discount on their first service. It's our way of introducing you to the exceptional experience at our spa and salon.</p>
+                <p>Discount Code: NEW15</p>
+            </div>
+
+            <div class="promotion">
+                <h3>Seasonal Special: Winter Glow</h3>
+                <p>Embrace the winter season with our Winter Glow special. Treat yourself to a hydrating facial and a warm stone massage to combat the effects of the cold weather.</p>
+                <p>Price: $80 (Limited time offer)</p>
+            </div>
+
+            <button class="view-more" onclick="navigateTo('specials.html')">Know More</button>
+        </section>
+
+        <footer>
+            <button onclick="navigateTo('index.html')">Home</button>
+            <button onclick="navigateTo('About.html')">About</button>
+            <button onclick="navigateTo('blog.html')">Blog</button>
+            <button onclick="navigateTo('booking.html')">Book Now</button>
+            <button onclick="navigateTo('contact.html')">Contact Us</button>
+            <button onclick="navigateTo('faqs.html')">FAQs</button>
+            <button onclick="navigateTo('gallery.html')">Gallery</button>
+            <button onclick="navigateTo('services.html')">Services</button>
+            <button onclick="navigateTo('testimonials.html')">Testimonials</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

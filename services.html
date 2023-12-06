@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Services - Spa and Salon</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+            color: #fff;
+        }
+
+        header p {
+            margin: 10px 0;
+            color: #ddd;
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+
+        section p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        /* List styles */
+        ul {
+            padding: 0;
+        }
+
+        ul li {
+            list-style-type: none;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li h3 {
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+        }
+
+        ul li p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer button {
+            color: #fff;
+            background-color: #333;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        footer button:hover {
+            background-color: #555;
+        }
+        #massage:hover, #facials:hover, #hair:hover{
+            transform: scale(1.05)
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Services</h1>
+        <p>Indulge yourself with our rejuvenating services</p>
+    </header>
+
+    <section id="massage">
+        <h2>Massages</h2>
+        <p>Relax your body and mind with our expert massage therapists. Choose from a variety of techniques, including Swedish, deep tissue, and hot stone massages.</p>
+        <p>Price: $60 per session</p>
+    </section>
+
+    <section id="facials">
+        <h2>Facials</h2>
+        <p>Nourish your skin with our customized facial treatments. Our estheticians use high-quality products to address your specific skincare needs, leaving your skin refreshed and radiant.</p>
+        <p>Price: $50 per session</p>
+    </section>
+
+    <section id="hair">
+        <h2>Hair Treatments</h2>
+        <p>Transform your hair with our professional hair care services. Whether you're looking for a haircut, color treatment, or styling, our skilled stylists will enhance your natural beauty.</p>
+        <p>Price: $70 per session</p>
+    </section>
+
+    <section id="packages">
+        <h2>Special Packages</h2>
+        <ul>
+            <li>
+                <h3>Package 1: Relaxation Bliss</h3>
+                <p>Indulge in a full day of relaxation with a combination of a massage, facial, and hair treatment. Complete your day with complimentary spa amenities. Price: $150</p>
+            </li>
+            <li>
+                <h3>Package 2: Ultimate Rejuvenation</h3>
+                <p>Experience the ultimate rejuvenation with our signature services, including a hot stone massage, advanced facial treatment, and a personalized hair makeover. Price: $200</p>
+            </li>
+            <li>
+                <h3>Package 3: Couples Retreat</h3>
+                <p>Enjoy a romantic day with your special someone. Both of you will receive a couples massage, side-by-side facials, and a hairstyling session. Price: $300</p>
+            </li>
+            <li>
+                <h3>Package 4: Mom-to-Be Package</h3>
+                <p>Pamper the mom-to-be with a soothing prenatal massage, a gentle facial designed for expectant mothers, and a relaxing hair treatment. Price: $120</p>
+            </li>
+            <!-- Add more details about special packages and discounts here -->
+        </ul>
+    </section>
+
+    <footer>
+        <button onclick="navigateTo('index.html')">Home</button>
+        <button onclick="navigateTo('About.html')">About</button>
+        <button onclick="navigateTo('blog.html')">Blog</button>
+        <button onclick="navigateTo('booking.html')">Book Now</button>
+        <button onclick="navigateTo('contact.html')">Contact Us</button>
+        <button onclick="navigateTo('faqs.html')">FAQs</button>
+        <button onclick="navigateTo('gallery.html')">Gallery</button>
+        <button onclick="navigateTo('services.html')">Services</button>
+        <button onclick="navigateTo('specials.html')">Offers</button>
+        <button onclick="navigateTo('testimonials.html')">Testimonials</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
